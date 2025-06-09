@@ -15,12 +15,13 @@
 <body class="work">
 
   <nav>
-      <a href="index.html" class="logo"><img src="logo.PNG" alt="LOGO" width="50px" ></a>
-      <div class="menu">
-          <a href="about.html">About</a>
-          <a href="work.html">Work</a>
-          <a href="contact.html">Contact</a>
-      </div>
+    <a href="index.html" class="logo"><img src="logo.PNG" alt="LOGO" width="50px"></a>
+    <div class="menu-toggle" onclick="toggleMenu()">☰</div> <!-- ✅ BOUTON MOBILE -->
+    <div class="menu">
+        <a href="about.html">About</a>
+        <a href="work.html">Work</a>
+        <a href="contact.html">Contact</a>
+    </div>
   </nav>
 
     <section class="work">
@@ -30,12 +31,14 @@
             <img src="images/3D/3D3.png" class="gallery-item" alt="Work 3">
             <img src="images/3D/3D4.png" class="gallery-item" alt="Work 4">
             <img src="images/3D/3D5.png" class="gallery-item" alt="Work 5">
-            <video src="images/3D/3D6.mp4" class="gallery-item 3d"  class="gallery-item" autoplay loop muted playsinline></video>
+            <img src="images/3D/3D6.gif" class="gallery-item" alt="Work 4">
             <img src="images/3D/3D7.gif" class="gallery-item" alt="Work 1">
             <img src="images/3D/3D11.png" class="gallery-item" alt="Work 11">
-            <video src="images/3D/3D8.mp4" class="gallery-item 3d" class="gallery-item" autoplay loop muted playsinline></video>
+            <img src="images/3D/3D8.gif" class="gallery-item" alt="Work 4">
             <img src="images/3D/3D9.png" class="gallery-item" alt="Work 3">
             <img src="images/3D/3D10.png" class="gallery-item" alt="Work 4">
+            <img src="images/3D/3D12.gif" class="gallery-item" alt="Work 4">
+            <img src="images/3D/3D13.gif" class="gallery-item" alt="Work 4">
 
         </div>
     </section>
@@ -131,6 +134,12 @@ function updateScrollBar() {
 }
 
 window.addEventListener('scroll', updateScrollBar);
+</script>
+<script>
+function toggleMenu() {
+    const menu = document.querySelector('.menu');
+    menu.classList.toggle('active');
+}
 </script>
 </body>
 <footer class="site-footer">

@@ -16,14 +16,15 @@
 
 </head>
 <body class="about">
-    <nav>
-        <a href="index.html" class="logo"><img src="logo.PNG" alt="LOGO" width="50px" ></a>
-        <div class="menu">
-            <a href="about.html">About</a>
-            <a href="work.html">Work</a>
-            <a href="contact.html">Contact</a>
-        </div>
-    </nav>
+  <nav>
+    <a href="index.html" class="logo"><img src="logo.PNG" alt="LOGO" width="50px"></a>
+    <div class="menu-toggle" onclick="toggleMenu()">☰</div> <!-- ✅ BOUTON MOBILE -->
+    <div class="menu">
+        <a href="about.html">About</a>
+        <a href="work.html">Work</a>
+        <a href="contact.html">Contact</a>
+    </div>
+  </nav>
 
 
       <section>
@@ -57,6 +58,12 @@
     }
 
     window.addEventListener('scroll', updateScrollBar);
+</script>
+<script>
+function toggleMenu() {
+    const menu = document.querySelector('.menu');
+    menu.classList.toggle('active');
+}
 </script>
 </body>
 <footer class="site-footer">

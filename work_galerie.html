@@ -15,14 +15,14 @@
 <body class="work">
 
   <nav>
-      <a href="index.html" class="logo"><img src="logo.PNG" alt="LOGO" width="50px" ></a>
-      <div class="menu">
-          <a href="about.html">About</a>
-          <a href="work.html">Work</a>
-          <a href="contact.html">Contact</a>
-      </div>
+    <a href="index.html" class="logo"><img src="logo.PNG" alt="LOGO" width="50px"></a>
+    <div class="menu-toggle" onclick="toggleMenu()">☰</div> <!-- ✅ BOUTON MOBILE -->
+    <div class="menu">
+        <a href="about.html">About</a>
+        <a href="work.html">Work</a>
+        <a href="contact.html">Contact</a>
+    </div>
   </nav>
-
     <section class="work">
         <div class="gallery">
             <img src="images/3D/3D1.PNG" class="gallery-item" alt="Work 1">
@@ -64,6 +64,7 @@
             <img src="images/CONCEPT/png26.png" class="gallery-item"  alt="Work 5">
             <img src="images/CONCEPT/png27.png" class="gallery-item" alt="Work 5">
             <img src="images/CONCEPT/png28.png" class="gallery-item" alt="Work 5">
+            <img src="images/CONCEPT/png29.png" class="gallery-item" alt="Work 5">
 
             <img src="images\ILLUSTRATION\IMG_1190.PNG" class="gallery-item" alt="Work 5">
             <img src="images\ILLUSTRATION\IMG_1192.PNG" class="gallery-item" alt="Work 5">
@@ -196,6 +197,12 @@ function updateScrollBar() {
 }
 
 window.addEventListener('scroll', updateScrollBar);
+</script>
+<script>
+function toggleMenu() {
+    const menu = document.querySelector('.menu');
+    menu.classList.toggle('active');
+}
 </script>
 </body>
 <footer class="site-footer">

@@ -576,4 +576,34 @@ transform: scale(1.08);
     gap: 5px;
   }
 }
+
+
+@media (max-width: 768px) {
+    .menu {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 20px;
+        background: rgba(0, 0, 0, 0.8);
+        padding: 10px;
+        border-radius: 5px;
+    }
+
+    .menu a {
+        display: block;
+        padding: 10px;
+    }
+
+    .menu-toggle {
+        display: block;
+        font-size: 30px;
+        color: white;
+        cursor: pointer;
+    }
+
+    .menu.active {
+        display: flex;
+    }
+}
 >>>>>>> 8869d74bc8bb8f12b199f7a34bb603c82f1a81ed
